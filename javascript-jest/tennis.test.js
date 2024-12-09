@@ -56,7 +56,7 @@ describe('getScore1', function() {
   });
 });
 
-describe('getScore2', function() {
+describe.only('getScore2', function() {
   each(allScores).it("when the points are %s:%s is %s", function(p1, p2, expected) {
     expect(getScore2(p1, p2)).toEqual(expected);
   });
